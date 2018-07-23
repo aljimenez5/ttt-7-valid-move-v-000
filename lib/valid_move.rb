@@ -5,7 +5,8 @@ def valid_move?(board, index)
     true
   elsif board.include?('X' || 'O')
     true
-    end
+  else
+    false
   end
 end
 
