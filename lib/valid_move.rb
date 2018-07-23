@@ -3,7 +3,9 @@ def valid_move?(board, index)
     true
   elsif index.between?(0, 8) && board.include?('X' || 'O')
     true
-    if position_taken?
+    if !position_taken?
+      true
+    else
       false
     end
   else
