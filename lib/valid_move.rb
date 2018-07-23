@@ -4,6 +4,7 @@ def valid_move?(board, index)
     true
   elsif valid_move && board.include?('X' || 'O')
     true
+  elsif !position_taken?
   else
     false
   end
