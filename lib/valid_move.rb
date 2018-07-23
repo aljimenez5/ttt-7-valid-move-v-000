@@ -6,12 +6,14 @@ def valid_move?(board, index)
   elsif valid_move && !empty_board
     true
   end
-  
-  elsif !position_taken?
+
+  if !position_taken?
     true
   else
     false
   end
+
+  
 end
 
 
