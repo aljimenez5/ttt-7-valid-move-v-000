@@ -3,7 +3,7 @@ def valid_move?(board, index)
   empty_board = !board.include?('X' || 'O')
   if valid_move && empty_board
     true
-  elsif valid_move && board.include?('X' || 'O')
+  elsif valid_move && !empty_board
     true
   elsif !position_taken?
     true
