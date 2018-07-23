@@ -1,7 +1,7 @@
 def valid_move?(board, index)
   valid_index = index.between?(0, 8)
   empty_board = !board.include?('X' || 'O')
-  if valid_index && empty_board
+  if valid_index && !position_taken?
     true
   elsif valid_index && !empty_board
     true
