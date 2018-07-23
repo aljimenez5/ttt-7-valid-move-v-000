@@ -1,7 +1,7 @@
 def valid_move?(board, index)
-  valid_move = index.between?(0, 8) 
+  valid_move = index.between?(0, 8)
   empty_board = !board.include?('X' || 'O')
-  if valid_move && !board.include?('X' || 'O')
+  if valid_move && empty_board
     true
   elsif valid_move && board.include?('X' || 'O')
     true
